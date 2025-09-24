@@ -9,7 +9,7 @@
   "full_name",
   "gender",
   "date_of_birth",
-  "age",
+  "ages",
   "photo",
   "mobile_no",
   "email_id",
@@ -17,6 +17,7 @@
   "emergency_contact",
   "emergency_contact_no",
   "column_break_1",
+  "member_id",
   "status",
   "height",
   "weight",
@@ -26,6 +27,7 @@
   "end_date",
   "trainer_assigned",
   "batch_slot",
+  "id_proof",
   "section_break_payment",
   "membership_fee",
   "discount",
@@ -178,11 +180,6 @@
    "label": "Notes"
   },
   {
-   "fieldname": "age",
-   "fieldtype": "Data",
-   "label": "Age"
-  },
-  {
    "fieldname": "column_break_jasn",
    "fieldtype": "Column Break"
   },
@@ -201,13 +198,30 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "ages",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member Id",
+   "options": "Member"
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Attach Image",
+   "label": "ID Proof"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-23 16:58:31.011230",
+ "modified": "2025-09-24 11:22:44.829377",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Membership",
