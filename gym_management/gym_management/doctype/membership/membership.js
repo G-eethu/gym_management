@@ -21,5 +21,22 @@ frappe.ui.form.on("Membership", {
             frappe.msgprint(__('Member must be at least 18 years old to submit the membership.'));
             frappe.validated = false;
         }
+    },
+    start_date(frm) {
+        if (frm.doc.membership_plan == "Monthly") {
+            frm.doc.end_date = frappe.datetime.add_months(frm.doc.start_date, 1);
+            frm.refresh_field('end_date');
+        } else if (frm.doc.membership_plan == "Quarterly") {
+            frm.doc.end_date = frappe.datetime.add_months(frm.doc.start_date, 3);
+            frm.refresh_field('end_date');
+        }
+        else if (frm.doc.membership_plan == "Half-Yearly") {
+            frm.doc.end_date = frappe.datetime.add_months(frm.doc.start_date, 6);
+            frm.refresh_field('end_date');
+        }
+        else if (frm.doc.membership_plan == "Yearly") {
+            frm.doc.end_date = frappe.datetime.add_months(frm.doc.start_date, 12);
+            frm.refresh_field('end_date');
+        }
     }
 });

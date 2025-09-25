@@ -137,13 +137,14 @@ app_license = "unlicense"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	# "Sales Invoice": {
+	# 	"on_update": "gym_management.doc_events.sales_invoice.update_status_in_membership"
+	# },
+    "Payment Entry": {
+        "on_submit": "gym_management.doc_events.payment_entry.update_membership_on_payment"
+    }
+}
 
 # Scheduled Tasks
 # ---------------

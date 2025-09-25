@@ -158,14 +158,20 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "\nActive\nExpired"
+   "options": "\nActive\nExpired\nSuspend",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2025-09-24 11:24:26.707697",
+ "links": [
+  {
+   "link_doctype": "Membership",
+   "link_fieldname": "member_id"
+  }
+ ],
+ "modified": "2025-09-24 11:53:22.639053",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Member",

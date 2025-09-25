@@ -112,10 +112,10 @@
   },
   {
    "fieldname": "membership_plan",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Membership Plan",
-   "options": "Membership Plan",
+   "options": "\nMonthly\nQuarterly\nHalf-Yearly\nYearly",
    "reqd": 1
   },
   {
@@ -150,7 +150,8 @@
   {
    "fieldname": "membership_fee",
    "fieldtype": "Currency",
-   "label": "Membership Fee"
+   "label": "Membership Fee",
+   "mandatory_depends_on": "eval:doc.membership_plan == \"Monthly\""
   },
   {
    "fieldname": "discount",
@@ -163,16 +164,20 @@
    "label": "Net Payable"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "payment_status",
    "fieldtype": "Select",
    "label": "Payment Status",
-   "options": "Paid\nPartial\nUnpaid"
+   "options": "\nPaid\nPartial\nUnpaid",
+   "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "invoice",
    "fieldtype": "Link",
    "label": "Invoice",
-   "options": "Sales Invoice"
+   "options": "Sales Invoice",
+   "read_only": 1
   },
   {
    "fieldname": "notes",
@@ -220,8 +225,13 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2025-09-24 11:22:44.829377",
+ "links": [
+  {
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "custom_membership"
+  }
+ ],
+ "modified": "2025-09-25 17:27:18.586992",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Membership",

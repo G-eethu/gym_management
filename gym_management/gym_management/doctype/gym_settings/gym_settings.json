@@ -1,44 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
- "creation": "2025-09-23 16:10:22.183202",
+ "creation": "2025-09-25 17:40:30.775874",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "plan_name",
-  "rate"
+  "membership_payment"
  ],
  "fields": [
   {
-   "fieldname": "plan_name",
-   "fieldtype": "Data",
-   "label": "Plan Name"
-  },
-  {
-   "fieldname": "rate",
-   "fieldtype": "Currency",
-   "label": "Rate"
+   "fieldname": "membership_payment",
+   "fieldtype": "Table",
+   "label": "Membership Payment",
+   "options": "Membership Payment"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "issingle": 1,
  "links": [],
- "modified": "2025-09-24 11:56:51.260836",
+ "modified": "2025-09-25 17:40:55.605295",
  "modified_by": "Administrator",
  "module": "Gym Management",
- "name": "Membership Plan",
- "naming_rule": "Set by user",
+ "name": "Gym Settings",
  "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1

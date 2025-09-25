@@ -5,6 +5,24 @@ import frappe
 from frappe.model.document import Document
 
 class Member(Document):
+    def on_submit(self):
+        self.create_customer()
+
+    def create_customer(self):
+        # create new Customer doc
+        customer = frappe.new_doc("Customer")
+        customer.customer_name = self.full_name
+        customer.customer_type = "Individual"
+        customer.territory = "All Territories"
+        customer.email_id = self.email_id
+        customer.mobile_no = self.mobile_number
+        customer.date_of_birth = self.date_of_birth
+        customer.address = self.address
+        customer.gender = self.gender
+        customer.save(ignore_permissions=True)
+
+
+
     @frappe.whitelist()
     def create_membership(self):
         # create new Membership doc
