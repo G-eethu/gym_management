@@ -31,8 +31,6 @@ class Member(Document):
         membership.full_name = self.full_name
         membership.email_id = self.email_id
         membership.mobile_no = self.mobile_number
-        membership.start_date = frappe.utils.nowdate()
-        membership.end_date = frappe.utils.add_months(frappe.utils.nowdate(), 12)
         membership.date_of_birth = self.date_of_birth
         membership.height = self.height
         membership.weight = self.weight

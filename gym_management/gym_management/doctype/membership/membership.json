@@ -36,7 +36,9 @@
   "column_break_jasn",
   "invoice",
   "notes",
-  "amended_from"
+  "amended_from",
+  "more_details_section",
+  "renewed_payment_details"
  ],
  "fields": [
   {
@@ -111,6 +113,7 @@
    "options": "General Fitness\nWeight Loss\nMuscle Gain\nEndurance\nFlexibility"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "membership_plan",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -119,6 +122,7 @@
    "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "start_date",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -126,6 +130,7 @@
    "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date"
@@ -148,6 +153,7 @@
    "label": "Payment Details"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "membership_fee",
    "fieldtype": "Currency",
    "label": "Membership Fee",
@@ -189,10 +195,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Active\nPending\nSuspended\nCancelled"
+   "options": "Active\nPending\nExpired\nCancelled"
   },
   {
    "fieldname": "amended_from",
@@ -220,6 +227,19 @@
    "fieldname": "id_proof",
    "fieldtype": "Attach Image",
    "label": "ID Proof"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "more_details_section",
+   "fieldtype": "Section Break",
+   "label": "More Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "renewed_payment_details",
+   "fieldtype": "Table",
+   "label": "Renewed Payment Details",
+   "options": "Payment Details Table"
   }
  ],
  "grid_page_length": 50,
@@ -231,7 +251,7 @@
    "link_fieldname": "custom_membership"
   }
  ],
- "modified": "2025-09-25 17:27:18.586992",
+ "modified": "2025-09-26 12:56:12.359971",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Membership",
