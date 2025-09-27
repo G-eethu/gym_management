@@ -1,0 +1,145 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"sSp25Vv_Mo\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management</span>\",\"col\":12}},{\"id\":\"kBNj2NP80s\",\"type\":\"card\",\"data\":{\"card_name\":\"Doctypes\",\"col\":3}},{\"id\":\"85PkfrfUHA\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":3}},{\"id\":\"fxMsMyLTd9\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":3}},{\"id\":\"F5PNJHdjAm\",\"type\":\"card\",\"data\":{\"card_name\":\"Invoice\",\"col\":3}},{\"id\":\"qAZZaPbZeR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Membership\",\"col\":4}},{\"id\":\"4HceGpWZlk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Expired Membership\",\"col\":4}}]",
+ "creation": "2025-09-27 12:47:05.132364",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Gym Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Doctypes",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member",
+   "link_count": 0,
+   "link_to": "Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Membership",
+   "link_count": 0,
+   "link_to": "Membership",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Membership Plan",
+   "link_count": 0,
+   "link_to": "Membership Plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Report",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Membership Report",
+   "link_count": 0,
+   "link_to": "Membership Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Gym Settings",
+   "link_count": 0,
+   "link_to": "Gym Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Invoice",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-09-27 17:01:05.846989",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Management",
+ "number_cards": [
+  {
+   "label": "Active Membership",
+   "number_card_name": "Active Membership"
+  },
+  {
+   "label": "Expired Membership",
+   "number_card_name": "Expired Membership"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 6.0,
+ "shortcuts": [],
+ "title": "Gym Management"
+}
