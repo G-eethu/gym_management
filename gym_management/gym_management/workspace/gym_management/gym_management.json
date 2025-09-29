@@ -1,6 +1,11 @@
 {
- "charts": [],
- "content": "[{\"id\":\"sSp25Vv_Mo\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management</span>\",\"col\":12}},{\"id\":\"kBNj2NP80s\",\"type\":\"card\",\"data\":{\"card_name\":\"Doctypes\",\"col\":3}},{\"id\":\"85PkfrfUHA\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":3}},{\"id\":\"fxMsMyLTd9\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":3}},{\"id\":\"F5PNJHdjAm\",\"type\":\"card\",\"data\":{\"card_name\":\"Invoice\",\"col\":3}},{\"id\":\"qAZZaPbZeR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Membership\",\"col\":4}},{\"id\":\"4HceGpWZlk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Expired Membership\",\"col\":4}}]",
+ "charts": [
+  {
+   "chart_name": "Membership",
+   "label": "Membership"
+  }
+ ],
+ "content": "[{\"id\":\"sSp25Vv_Mo\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Management</span>\",\"col\":12}},{\"id\":\"kBNj2NP80s\",\"type\":\"card\",\"data\":{\"card_name\":\"Doctypes\",\"col\":3}},{\"id\":\"85PkfrfUHA\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":3}},{\"id\":\"fxMsMyLTd9\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":3}},{\"id\":\"F5PNJHdjAm\",\"type\":\"card\",\"data\":{\"card_name\":\"Invoice\",\"col\":3}},{\"id\":\"qAZZaPbZeR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Membership\",\"col\":4}},{\"id\":\"4HceGpWZlk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Expired Membership\",\"col\":4}},{\"id\":\"VgkF-nNpx3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Membership\",\"col\":12}}]",
  "creation": "2025-09-27 12:47:05.132364",
  "custom_blocks": [],
  "docstatus": 0,
@@ -120,7 +125,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-27 17:01:05.846989",
+ "modified": "2025-09-29 12:08:07.001616",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Management",
